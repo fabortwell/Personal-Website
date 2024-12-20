@@ -185,3 +185,37 @@ cursor: pointer;
 .about-me-heading{
     font-size: 2rem;
 }
+.upper-portfolio{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 2rem;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 2.5rem;
+    background-color: #FFFFFF;
+}
+.right-portfolio{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.recent-projects-2{
+    font-size: 2rem;
+}
+#git-icon{
+    font-size: 2rem; 
+    color: #fff;
+    border-radius: 50%;
+    height: auto;
+    text-align: left;
+}
+.github-icon{
+    color: #fff;
+    background-color: #E62872;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
