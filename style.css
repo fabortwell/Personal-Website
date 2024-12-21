@@ -12,6 +12,11 @@
     padding: 1.5rem;
     background-color: #ffffff;
 }
+#navbar{
+    position: relative;
+    position: sticky;
+    top: 0;
+}
 .logo{
     color: hsl(237, 17, 19, 100);
     font-size: 1.7rem;
@@ -220,6 +225,7 @@ cursor: pointer;
     cursor: pointer;
 }
 
+
 .card {
     background-color: #fff;
     border-radius: 15px;
@@ -238,6 +244,7 @@ cursor: pointer;
   .card img {
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
   
   .card-content {
@@ -245,7 +252,7 @@ cursor: pointer;
   }
   
   .card-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #333;
     margin: 10px 0;
   }
@@ -259,18 +266,16 @@ cursor: pointer;
   
   .card-link {
     display: inline-block;
-    background-color: #5E3BEE;
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
-    
-    padding: 10px 15px;
-    border-radius: 25px;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
     transition: 0.3s ease, color 0.3s ease;
   }
-  
-  .card-link:hover {
-    background-color: #F5FCFF;
+  .card-link:hover{
+    font-size: 1rem;
+    font-weight: bold;
     color: black;
   }
   .lower-wrap{
@@ -280,3 +285,54 @@ cursor: pointer;
     gap: 1rem;
     padding: 2rem;
   }
+  #github-icon-link{
+    font-size: 1.5rem; 
+    height: auto;
+    cursor: pointer;
+  }
+  .link-style-wrap{
+    display: flex;
+    border-radius: 0.6rem;
+    width: 12rem;
+    gap: 1rem;
+    background-color: #5E3BEE;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .link-style-wrap:hover{
+    background-color: #F5FCFF; ;
+    color: black;
+  }
+  .upper-testimonial{
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+ 
+  .testimonials{
+    background-color: #F5FCFF; 
+  }
+  .upper-testimonial{
+    padding: 3rem;
+  }
+  .upper-testimonial-header{
+    color:  #a19e9e;
+  }
+  .upper-testimonial-text{
+    font-size: 2.5rem;
+  }
+.testimon{
+    border: 1px solid #366e16;
+    padding: 2rem;
+    max-width: 400px;
+    height: auto;
+   
+    /* display: flex; */
+}
+.testimon-flex{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
