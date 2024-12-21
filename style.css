@@ -3,6 +3,7 @@
     Padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: "Calibri", Tahoma, sans-serif;
 }
 
 .header{
@@ -17,12 +18,15 @@
     position: sticky;
     top: 0;
 }
+#home-link{
+   color:  #5E3BEE;
+   font-weight: bold;
+}
 .logo h1{
     color: black;
     font-size: 1.5rem;
 }
 .logo a{
-    
     text-decoration: none;
     cursor: pointer;
 }
@@ -36,6 +40,7 @@ ul{
 li a{
     text-decoration: none;
     color: black;
+    font-size: 1.2rem;
 }
 
 button a{
@@ -45,8 +50,9 @@ button a{
 
 .contact-me button{
    background-color: #ffffff;
-   padding: 0.7rem;
+   padding: 0.6rem;
    border: 1px solid #5E3BEE;
+   border-radius: 0.4rem;
 
 }
 
@@ -62,7 +68,27 @@ button a{
    background-color: #F5FCFF;
    padding: 7rem;
 }
-
+.intro{
+    font-size: 1rem;
+    text-decoration: 5px solid #5E3BEE underline;
+    color: #666;
+}
+.get-in-touch{
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#contact{
+    font-size: 1.2rem;
+}
+.get-in-touch:hover{
+    background-color: black;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 .hero-image img{
     width: 35rem;
     height: auto;
@@ -336,6 +362,7 @@ cursor: pointer;
   }
 .testimon{
     border: 1px solid #006B6A;
+    border-radius: 0.5rem;
     padding: 2rem;
     max-width: 400px;
     height: auto;
@@ -383,3 +410,147 @@ cursor: pointer;
     justify-content: center;
     justify-items: center;
 }
+
+.contact-me-section{
+    background-color: #fff;
+    padding: 3rem;
+
+}
+.contact-me-upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.7rem;
+}
+.contact-header-one{
+    color: #a19e9e;
+    font-size: 1rem;
+}
+.contact-header-two{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.contact-paragraph{
+    font-size: 1rem;
+    color: #a19e9e;
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 30px;
+    width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+    display: block; 
+    text-align: left;
+  }
+  
+
+  input[type="text"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5E3BEE;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fafafa;
+    outline: none;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #5E3BEE;
+    box-shadow: 0 0 3px #b5aef9;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px; 
+  }
+  
+
+  .first-last {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .first-last > div {
+    flex: 1; 
+  }
+  
+
+  .email-phone {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .email-phone > div {
+    flex: 1; 
+  }
+  
+ 
+  select {
+    width: 100%; 
+  }
+  
+  textarea {
+    width: 100%; 
+  }
+  
+
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+
+  button {
+    padding: 10px 15px;
+    background-color: #5E3BEE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 120px;
+    margin: 10px auto 0;
+    display: block;
+  }
+  
+  button:hover {
+    background-color: #5548c8;
+    transform: translateY(-2px);
+  }
+  
+  form > div {
+    width: 100%; 
+  }
+  
+  
+  
+  
