@@ -159,4 +159,4 @@ Project Link: [https://github.com/fabortwell/personal-website](https://github.co
 - GitHub Pages for hosting
 
 ---
-Made with ❤️ by [Brian]
+Made with ❤️ by Brian
