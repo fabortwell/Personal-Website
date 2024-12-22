@@ -2,7 +2,8 @@
 
 A modern, responsive personal portfolio website showcasing my skills, projects, and professional experience. Built with HTML, CSS, and JavaScript, featuring a clean and professional design.
 
-![Portfolio Preview](![image](https://github.com/user-attachments/assets/3a0d05c3-7b7d-4e3b-9687-382cb95038e1)
+![![image](https://github.com/user-attachments/assets/54787b12-8c6c-4743-a56f-2e1060087258)
+](![image](https://github.com/user-attachments/assets/3a0d05c3-7b7d-4e3b-9687-382cb95038e1)
 )
 
 ## 🌟 Features
@@ -22,7 +23,6 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 - HTML5
 - CSS3 (with Flexbox)
-- JavaScript
 - Font Awesome Icons
 - Google Fonts
 
@@ -38,7 +38,7 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/portfolio-website.git
+git@github.com:fabortwell/personal-website.git
 ```
 
 2. Navigate to the project directory:
