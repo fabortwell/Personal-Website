@@ -6,6 +6,10 @@
     font-family: "Calibri", Tahoma, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header{
     display: flex;
     align-items: center;
@@ -50,11 +54,20 @@ button a{
 
 .contact-me button{
    background-color: #ffffff;
+   color: #5E3BEE;
    padding: 0.6rem;
    border: 1px solid #5E3BEE;
    border-radius: 0.4rem;
 
 }
+
+.contact-me button:hover{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transform: translateY(-5px);
+}
+
 
 button a{
     color: #5E3BEE;
@@ -69,7 +82,8 @@ button a{
    padding: 7rem;
 }
 .intro{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: 5px solid #5E3BEE underline;
     color: #666;
 }
@@ -77,6 +91,9 @@ button a{
     font-size: 1.1rem;
     font-weight: bold;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.content a{
+  text-decoration: none;
 }
 #contact{
     font-size: 1.2rem;
@@ -190,9 +207,10 @@ cursor: pointer;
 
 .about-me-image{
     width: 35rem;
+    border: none;
     height: auto;
-    border-radius: 0.3rem;
     object-fit: cover;
+  
 }
 .about-me{
     display: flex;
@@ -225,6 +243,7 @@ cursor: pointer;
     display: flex;
     margin: 0 auto;
     max-width: 1200px;
+    margin-top: 4rem;
     padding-top: 2rem;
     justify-content: space-between;
     justify-items: center;
@@ -244,8 +263,8 @@ cursor: pointer;
     font-size: 2rem;
 }
 #git-icon{
-    font-size: 2rem; 
     color: #fff;
+    font-size: 1rem;
     border-radius: 50%;
     height: auto;
     text-align: left;
@@ -254,11 +273,15 @@ cursor: pointer;
     color: #fff;
     background-color: #E62872;
     border: none;
-    padding: 0.5rem;
+    width: 10rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
 }
 
+ .my-github-link a{
+    text-decoration: none;
+ }
 
 .card {
     background-color: #fff;
@@ -346,6 +369,7 @@ cursor: pointer;
  
   .testimonials{
     background-color: #F5FCFF; 
+    margin-top: 5rem;
     padding-bottom: 5rem;
   }
   .upper-testimonial{
@@ -361,8 +385,8 @@ cursor: pointer;
     font-size: 2rem;
   }
 .testimon{
-    border: 1px solid #006B6A;
-    border-radius: 0.5rem;
+    border: 1px dashed #006B6A;
+    border-radius: 0.6rem;
     padding: 2rem;
     max-width: 400px;
     height: auto;
@@ -542,7 +566,7 @@ cursor: pointer;
     display: block;
   }
   
-  button:hover {
+  .send button:hover {
     background-color: #5548c8;
     transform: translateY(-2px);
   }
@@ -551,6 +575,178 @@ cursor: pointer;
     width: 100%; 
   }
   
-  
-  
-  
+  .footer-nav{
+    display: flex;
+    padding: 5rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #F5FCFF;
+  }
+  .footer-content{
+    display: flex;
+    gap: 2rem;
+  }
+  .footer-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+ #footer-icon{
+    font-size: 1rem; 
+    color:#E62872;
+ }
+ #sticky-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ }
+
+
+ /* Tablet Devices (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .middle ul {
+    gap: 1rem;
+  }
+
+  .hero-section {
+    padding: 3rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  .content {
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  .expert-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .second-expert-section {
+    width: calc(50% - 1rem);
+    min-width: 300px;
+  }
+
+  .about-me {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .about-me-image {
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  .testimon-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .testimon {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
+
+/* Mobile Devices (up to 767px) */
+@media screen and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .middle ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .highlight, .expertise {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .second-expert-section {
+    width: 100%;
+  }
+
+  .upper-portfolio {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .lower-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .first-last, .email-phone {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media screen and (max-width: 480px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .content {
+    padding: 0 1rem;
+  }
+
+  .contact-me-section {
+    padding: 1.5rem;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .testimonial-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
